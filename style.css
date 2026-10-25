@@ -1,0 +1,479 @@
+/* BASIC PAGE STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f3ea;
+  color: #333;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header */
+.header {
+  background-color: #1e2a78;
+  color: white;
+  padding: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  margin-left: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 44px;
+  width: 44px;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 6px;
+  display: block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background-color: rgb(87, 166, 245);
+  color: white;
+}
+
+.sign-in {
+  background-color: white;
+  color: #1e2a78;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.sign-in:hover {
+  background-color: #31e263;
+  color: #1e2a78;
+  animation: button-pop 0.8s ease-in-out infinite alternate;
+}
+
+/* Search Section */
+.search-section {
+  background-color: #2a3a9e;
+  color: white;
+  text-align: center;
+  padding: 32px;
+}
+
+.search-section h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.search-box {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.search-box input,
+.search-box button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.search-box input {
+  min-width: 180px;
+}
+
+.search-box button {
+  background-color: orange;
+  color: #1e2a78;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.search-box button:hover {
+  background-color: #31e263;
+  color: #1e2a78;
+  animation: button-pop 0.8s ease-in-out infinite alternate;
+}
+
+/* Button grows a little */
+@keyframes button-pop {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Banner (image, text, button) */
+.banner {
+  position: relative;
+  width: 100%;
+}
+
+.banner img {
+  width: 4000px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.banner-text {
+  position: absolute;
+  top: 75%;
+  left: 8%;
+  transform: translateY(-50%);
+  margin: 0;
+  text-align: left;
+  padding: 32px;
+  max-width: 420px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.banner-line1 {
+  margin: 0;
+  font-family: "Great Vibes", cursive;
+  font-size: 64px;
+  font-weight: bold;
+  color: #1e2a78;
+}
+
+.banner-line2 {
+  margin-bottom: 12px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #16324f;
+}
+
+.banner-note {
+  margin-bottom: 20px;
+  color: #574f4f;
+  font-size: 16px;
+}
+
+.banner-btn {
+  display: inline-block;
+  background-color: white;
+  color: #1e2a78;
+  text-decoration: none;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+.banner-btn:hover {
+  background-color: #31e263;
+  color: #1e2a78;
+}
+
+/* Sections (title, text, padding) */
+.section {
+  padding: 24px;
+  /* Gap so title is not under the header */
+  scroll-margin-top: 80px;
+}
+
+.section h2,
+.section-text,
+.card-grid {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section h2 {
+  margin-bottom: 8px;
+  color: #1e2a78;
+}
+
+.section-text {
+  margin-bottom: 24px;
+  color: #555;
+}
+
+/* Background colors (destinations, hotels, restaurants) */
+#destinations {
+  background-color: white;
+}
+
+#hotels {
+  background-color: #efe8d8;
+}
+
+#restaurants {
+  background-color: white;
+}
+
+/* Card Grid (destinations, hotels, restaurants) */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 33px;
+  height: 33px;
+  background-color: white;
+  color: #1b3d2f;
+  border-radius: 50px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 33px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3,
+.card p {
+  padding: 0 16px;
+}
+
+.card h3 {
+  margin-top: 12px;
+}
+
+.rating {
+  color: #555;
+  font-weight: bold;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.stars {
+  color: orangered;
+}
+
+.card p:last-child {
+  padding-bottom: 16px;
+}
+
+/* Flight ideas section */
+.idea-section {
+  max-width: none;
+  background-color: #1e2a78;
+  color: white;
+}
+
+.idea-section h2,
+.idea-section .section-text {
+  color: white;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.idea-box {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.idea-card {
+  background-color: #f1f3fe;
+  color: #141c56;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 220px;
+  transition: transform 0.3s ease;
+}
+
+.idea-card:hover {
+  transform: translateY(-5px);
+  background-color: #31e263;
+  color: #1e2a78;
+}
+
+/* Footer (logo, copyright, help link) */
+.footer {
+  background-color: #141c56;
+  color: white;
+  padding: 24px 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-link {
+  color: #f5c451;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: #31e263;
+}
+
+.footer-left {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+/* RESPONSIVE (phone and tablet) */
+/* @media = "if the screen is this size, use these styles" */
+
+/* Tablet: screen 900px or smaller → 2 cards in a row */
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .banner img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+  }
+
+  /* Keep banner words on the photo */
+  .banner-text {
+    top: auto;
+    bottom: 16px;
+    left: 16px;
+    right: 16px;
+    transform: none;
+    max-width: none;
+    padding: 16px;
+  }
+
+  .banner-line1 {
+    font-size: 48px;
+  }
+
+  .banner-line2 {
+    font-size: 22px;
+  }
+}
+
+/* Phone: screen 600px or smaller → 1 column */
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-section h1 {
+    font-size: 26px;
+  }
+
+  .search-box input,
+  .search-box button {
+    width: 100%;
+  }
+
+  .banner img {
+    height: 320px;
+  }
+
+  .banner-text {
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    padding: 12px;
+  }
+
+  .banner-line1 {
+    font-size: 40px;
+  }
+
+  .banner-line2 {
+    font-size: 18px;
+  }
+
+  .banner-note {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
