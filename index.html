@@ -21,13 +21,26 @@
 
       <nav>
         <ul class="nav-menu">
+          <li><a class="plan-ai" href="#destinations">✦ Plan with AI</a></li>
           <li><a href="#hotels">Hotels</a></li>
           <li><a href="#flights">Flights</a></li>
           <li><a href="#restaurants">Restaurants</a></li>
           <li><a href="#destinations">Destinations</a></li>
-          <li><button type="button" class="sign-in">Sign In</button></li>
         </ul>
       </nav>
+
+      <div class="header-tools">
+        <button type="button" class="sign-in">Sign in</button>
+      </div>
+    </div>
+
+    <div class="page-nav" id="page-nav">
+      <div class="page-nav-inner">
+        <a href="#destinations">Things to Do</a>
+        <a href="#hotels">Hotels</a>
+        <a href="#restaurants">Restaurants</a>
+        <a href="#">Forums</a>
+      </div>
     </div>
   </header>
 
@@ -47,6 +60,19 @@
       </form>
     </section>
 
+    <!-- PROMO BOX -->
+    <section class="promo">
+      <div class="promo-box">
+        <img src="images/promo.jpg" alt="World landmarks and planes around the globe">
+        <div class="promo-line"></div>
+        <div class="promo-copy">
+          <h2>Plan days that feel like your kind of trip</h2>
+          <p>Walk, eat, rest, and see something new in one simple list.</p>
+          <a class="promo-btn" href="#destinations">Start planning</a>
+        </div>
+      </div>
+    </section>
+
     <!-- BANNER IMAGE -->
     <section class="banner">
       <img src="images/banner-3.jpg" alt="Overwater villas on a tropical sea" width="4000" height="2250">
@@ -61,116 +87,137 @@
     <!-- FEATURED DESTINATIONS -->
     <section id="destinations" class="section">
       <h2>Featured Destinations</h2>
-      <p class="section-text">A few places that feel calm, colorful, and easy to visit.</p>
+      <p class="section-text">Easy city trips for visitors: sea, streets, and good food.</p>
 
-      <div class="card-grid">
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="A beach in Goa">
-          <span class="badge">♡</span>
-          <h3>Goa, India</h3>
-          <p class="rating"><span class="stars">★★★★☆</span> 4.6</p>
-          <p>Soft sand, slow mornings, and seafood by the water.</p>
-        </article>
-
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800" alt="A canal in Venice">
-          <span class="badge">♡</span>
-          <h3>Venice, Italy</h3>
-          <p class="rating"><span class="stars">★★★★★</span> 4.8</p>
-          <p>Quiet canals, warm gelato, and golden evening light.</p>
-        </article>
-
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800" alt="A street in Kyoto">
-          <span class="badge">♡</span>
-          <h3>Kyoto, Japan</h3>
-          <p class="rating"><span class="stars">★★★★★</span> 4.9</p>
-          <p>Temple gardens, tea shops, and peaceful walking streets.</p>
-        </article>
+      <div class="scroll-wrap">
+        <div class="card-row">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="The beach in Pondicherry">
+            <span class="badge">♡</span>
+            <h3>Pondicherry</h3>
+            <p class="rating"><span class="stars">★★★★☆</span> 4.6</p>
+            <p>Quiet streets, the rock beach, and slow cafe mornings.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800" alt="A temple in Chennai">
+            <span class="badge">♡</span>
+            <h3>Chennai</h3>
+            <p class="rating"><span class="stars">★★★★★</span> 4.8</p>
+            <p>Marina Beach, temples, and filter coffee after a walk.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?w=800" alt="City streets in Bangalore">
+            <span class="badge">♡</span>
+            <h3>Bangalore</h3>
+            <p class="rating"><span class="stars">★★★★★</span> 4.9</p>
+            <p>Parks, food streets, and cool evenings in the garden city.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800" alt="Stone temples in Mahabalipuram">
+            <span class="badge">♡</span>
+            <h3>Mahabalipuram</h3>
+            <p class="rating"><span class="stars">★★★★☆</span> 4.5</p>
+            <p>Shore temples and sea breeze, a short trip from Chennai.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- POPULAR HOTELS -->
     <section id="hotels" class="section">
       <h2>Popular Hotels</h2>
-      <p class="section-text">Cozy stays with a nice view and a good breakfast.</p>
+      <p class="section-text">Nice stays in Pondicherry, Chennai, and Bangalore.</p>
 
-      <div class="card-grid">
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800" alt="Palm Bay Inn hotel">
-          <span class="badge">♡</span>
-          <h3>Palm Bay Inn</h3>
-          <p class="rating"><span class="stars">★★★★☆</span> 4.4</p>
-          <p>A beach hotel with a pool and rooms that face the sea.</p>
-        </article>
-
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800" alt="Hilltop Lodge hotel">
-          <span class="badge">♡</span>
-          <h3>Hilltop Lodge</h3>
-          <p class="rating"><span class="stars">★★★★★</span> 4.7</p>
-          <p>A quiet lodge in the hills. Great for weekend rest.</p>
-        </article>
-
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800" alt="Harbor Light Hotel">
-          <span class="badge">♡</span>
-          <h3>Harbor Light Hotel</h3>
-          <p class="rating"><span class="stars">★★★★☆</span> 4.5</p>
-          <p>A small city hotel near the waterfront and cafes.</p>
-        </article>
+      <div class="scroll-wrap">
+        <div class="card-row">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800" alt="Coral Street Stay in Pondicherry">
+            <span class="badge">♡</span>
+            <h3>Coral Street Stay</h3>
+            <p class="rating"><span class="stars">★★★★☆</span> 4.4</p>
+            <p>A small Pondicherry hotel near the beach and cafes.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=800" alt="Marina View Hotel in Chennai">
+            <span class="badge">♡</span>
+            <h3>Marina View Hotel</h3>
+            <p class="rating"><span class="stars">★★★★★</span> 4.7</p>
+            <p>A Chennai city hotel close to the sea and food streets.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800" alt="Garden City Lodge in Bangalore">
+            <span class="badge">♡</span>
+            <h3>Garden City Lodge</h3>
+            <p class="rating"><span class="stars">★★★★☆</span> 4.5</p>
+            <p>A quiet Bangalore stay near parks and weekend markets.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800" alt="White Terrace Inn in Pondicherry">
+            <span class="badge">♡</span>
+            <h3>White Terrace Inn</h3>
+            <p class="rating"><span class="stars">★★★★★</span> 4.6</p>
+            <p>A bright Pondicherry stay with a terrace near the promenade.</p>
+          </article>
+        </div>
       </div>
     </section>
 
     <!-- TOP RESTAURANTS -->
     <section id="restaurants" class="section">
       <h2>Top-Rated Restaurants</h2>
-      <p class="section-text">Tasty stops for breakfast, dinner, or a late snack.</p>
+      <p class="section-text">Local food visitors look for: dosa, filter coffee, and homestyle meals.</p>
 
-      <div class="card-grid">
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800" alt="Lemon Table restaurant">
-          <span class="badge">♡</span>
-          <h3>The Lemon Table</h3>
-          <p class="rating"><span class="stars">★★★★★</span> 4.8</p>
-          <p>Fresh pasta, lemon desserts, and a sunny terrace.</p>
-        </article>
-
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800" alt="Spice Garden restaurant">
-          <span class="badge">♡</span>
-          <h3>Spice Garden</h3>
-          <p class="rating"><span class="stars">★★★★☆</span> 4.6</p>
-          <p>Home-style Indian plates with mild and spicy options.</p>
-        </article>
-
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800" alt="Night Owl Cafe">
-          <span class="badge">♡</span>
-          <h3>Night Owl Cafe</h3>
-          <p class="rating"><span class="stars">★★★★☆</span> 4.3</p>
-          <p>Warm lighting, good coffee, and late-night pancakes.</p>
-        </article>
+      <div class="scroll-wrap">
+        <div class="card-row">
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=800" alt="Dosa and chutney">
+            <span class="badge">♡</span>
+            <h3>Harbour Dosa House</h3>
+            <p class="rating"><span class="stars">★★★★★</span> 4.8</p>
+            <p>Crispy dosa and coconut chutney near the Pondicherry promenade.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=800" alt="South Indian meal in Chennai">
+            <span class="badge">♡</span>
+            <h3>Filter Leaf Kitchen</h3>
+            <p class="rating"><span class="stars">★★★★☆</span> 4.6</p>
+            <p>Chennai meals with sambar, rice, and hot filter coffee.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=800" alt="Idli and coffee in Bangalore">
+            <span class="badge">♡</span>
+            <h3>Cubbon Coffee Shed</h3>
+            <p class="rating"><span class="stars">★★★★☆</span> 4.3</p>
+            <p>Soft idli, vada, and evening coffee in Bangalore.</p>
+          </article>
+          <article class="card">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=800" alt="Evening snacks in Pondicherry">
+            <span class="badge">♡</span>
+            <h3>Promenade Snack Hut</h3>
+            <p class="rating"><span class="stars">★★★★☆</span> 4.5</p>
+            <p>Hot snacks and tea after a walk on the Pondicherry beach road.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- SIMPLE EXTRA FEATURE -->
-    <section id="flights" class="section idea-section">
+    <!-- EASY FLIGHT IDEAS -->
+    <section id="flights" class="section">
       <h2>Easy Flight Ideas</h2>
       <p class="section-text">Short trips that are simple to plan this month.</p>
 
       <div class="idea-box">
         <div class="idea-card">
-          <h3>Pondicherry → Goa</h3>
-          <p>1 hour flight · Beach weekend</p>
+          <h3>Bangalore → Pondicherry</h3>
+          <p>6 hour drive · Beach weekend</p>
         </div>
         <div class="idea-card">
-          <h3>Bengaluru → Chennai</h3>
-          <p>1 hour flight · Palaces and food</p>
+          <h3>Bangalore → Chennai</h3>
+          <p>1 hour flight · Temples and food</p>
         </div>
         <div class="idea-card">
-          <h3>Hyderabad → Kerala</h3>
-          <p>1.5 hour flight · Backwaters</p>
+          <h3>Chennai → Pondicherry</h3>
+          <p>3 hour drive · Cafes by the sea</p>
         </div>
       </div>
     </section>
@@ -179,15 +226,68 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-left">
-      <div class="logo">
-        <img src="images/logo.jpg" alt="TripSlot logo">
-        <span class="logo-text">TripSlot</span>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h3>About TripSlot</h3>
+        <a href="#">About Us</a>
+        <a href="#">Press</a>
+        <a href="#">Resources and Policies</a>
+        <a href="#">Careers</a>
+        <a href="#">Trust &amp; Safety</a>
+        <a href="#">Contact us</a>
+        <a href="#">TripSlot Technology</a>
+        <a href="#">Blog</a>
       </div>
-      <p>&copy; 2026 TripSlot. All rights reserved.</p>
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <a href="#destinations">Things to Do</a>
+        <a href="#hotels">Hotels</a>
+        <a href="#restaurants">Restaurants</a>
+        <a href="#">Cruises</a>
+        <a href="#">Write a review</a>
+        <a href="#">Add a Place</a>
+        <a href="#">Join</a>
+        <a href="#">Travellers' Choice</a>
+        <a href="#">Help Centre</a>
+        <a href="#">Travel Stories</a>
+      </div>
+      <div class="footer-col">
+        <h3>Do Business With Us</h3>
+        <a href="#">Owners &amp; DMO/CVB</a>
+        <a href="#">Business Advantage</a>
+        <a href="#">Sponsored Placements</a>
+        <a href="#">Advertise with Us</a>
+        <a href="#">Access our Content API</a>
+        <h3 class="footer-app-title">Get The App</h3>
+        <a href="#">iPhone App</a>
+        <a href="#">Android App</a>
+      </div>
     </div>
-    <p>Need help? Visit our <a class="footer-link" href="#">Help page</a></p>
+
+    <div class="footer-bottom">
+      <div class="footer-left">
+        <div class="logo">
+          <img src="images/logo.jpg" alt="TripSlot logo">
+          <span class="logo-text">TripSlot</span>
+        </div>
+        <p>&copy; 2026 TripSlot. All rights reserved.</p>
+      </div>
+      <p>Need help? Visit our <a class="footer-link" href="#">Help page</a></p>
+    </div>
   </footer>
+
+  <!-- Shows the second nav only when you scroll to the promo box -->
+  <script>
+    window.addEventListener("scroll", function() {
+      var promo = document.querySelector(".promo");
+      var bar = document.getElementById("page-nav");
+      if (window.scrollY >= promo.offsetTop - 100) {
+        bar.classList.add("show");
+      } else {
+        bar.classList.remove("show");
+      }
+    });
+  </script>
 
 </body>
 </html>

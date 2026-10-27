@@ -21,14 +21,17 @@ img {
 .header {
   background-color: #1e2a78;
   color: white;
-  padding: 16px;
+  padding: 16px 16px 0;
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
 .header-inner {
-  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 16px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -69,15 +72,65 @@ nav {
 .nav-menu a {
   color: white;
   text-decoration: none;
-  padding: 10px;
-  border-radius: 6px;
+  padding: 8px;
+  border-radius: 20px;
   display: block;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-menu a:hover {
-  background-color: rgb(87, 166, 245);
+  background-color: rgb(87, 219, 245);
   color: white;
+}
+
+.nav-menu a.plan-ai {
+  background-color: white;
+  color: #1e2a78;
+  padding: 8px 16px;
+  margin-right: 12px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px #7ec8e3, 0 0 20px #57a6f5;
+}
+
+.nav-menu a.plan-ai:hover {
+  background-color: #31e263;
+  color: #1e2a78;
+}
+
+.page-nav {
+  display: none;
+  background-color: #1e2a78;
+}
+
+.page-nav.show {
+  display: block;
+}
+
+.page-nav-inner {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 28px;
+}
+
+.page-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  padding: 12px 0 10px;
+  border-bottom: 3px solid transparent;
+}
+
+.page-nav a:hover {
+  border-bottom-color: white;
+}
+
+.header-tools {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 16px;
 }
 
 .sign-in {
@@ -86,9 +139,9 @@ nav {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  padding: 10px;
+  padding: 10px 20px;
   border: none;
-  border-radius: 6px;
+  border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
@@ -154,6 +207,72 @@ nav {
   to {
     transform: scale(1.05);
   }
+}
+
+/* Promo box (below search) */
+.promo {
+  padding: 24px;
+  background-color: white;
+}
+
+.promo-box {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: stretch;
+  background-color: #5ec8f0;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.promo-box img {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 18px;
+}
+
+.promo-line {
+  width: 2px;
+  background-color: #1e2a78;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.promo-copy {
+  width: 50%;
+  padding: 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-copy h2 {
+  color: #1e2a78;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.promo-copy p {
+  color: #1e2a78;
+  margin-bottom: 20px;
+}
+
+.promo-btn {
+  background-color: white;
+  color: #1e2a78;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 24px;
+  font-weight: bold;
+}
+
+.promo-btn:hover {
+  background-color: #31e263;
+  color: #1e2a78;
 }
 
 /* Banner (image, text, button) */
@@ -229,8 +348,7 @@ nav {
 }
 
 .section h2,
-.section-text,
-.card-grid {
+.section-text {
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
@@ -255,15 +373,26 @@ nav {
   background-color: #efe8d8;
 }
 
-#restaurants {
+#restaurants,
+#flights {
   background-color: white;
 }
 
-/* Card Grid (destinations, hotels, restaurants) */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+/* Card row: 4 cards in one line, extra cards go to the next line */
+.scroll-wrap {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card-row .card {
+  width: calc((100% - 48px) / 4);
 }
 
 .card {
@@ -325,38 +454,27 @@ nav {
   padding-bottom: 16px;
 }
 
-/* Flight ideas section */
-.idea-section {
-  max-width: none;
-  background-color: #1e2a78;
-  color: white;
-}
-
-.idea-section h2,
-.idea-section .section-text {
-  color: white;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/* Easy Flight Ideas (no grey/navy section background) */
 .idea-box {
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  cursor: pointer;
 }
 
 .idea-card {
-  background-color: #f1f3fe;
-  color: #141c56;
+  background-color: rgb(40, 105, 235);
+  color: white;
   padding: 20px;
   border-radius: 10px;
   flex: 1;
   min-width: 220px;
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.idea-card h3 {
+  margin-bottom: 8px;
 }
 
 .idea-card:hover {
@@ -365,11 +483,51 @@ nav {
   color: #1e2a78;
 }
 
-/* Footer (logo, copyright, help link) */
+/* Footer (link columns, then logo) */
 .footer {
   background-color: #141c56;
   color: white;
-  padding: 24px 16px;
+  padding: 32px 16px 24px;
+}
+
+.footer-links {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+
+.footer-col {
+  flex: 1;
+}
+
+.footer-col h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.footer-app-title {
+  margin-top: 24px;
+}
+
+.footer-col a {
+  display: block;
+  color: #d8dce8;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.footer-col a:hover {
+  color: #31e263;
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -403,8 +561,26 @@ nav {
 
 /* Tablet: screen 900px or smaller → 2 cards in a row */
 @media (max-width: 900px) {
-  .card-grid {
-    grid-template-columns: 1fr 1fr;
+  .promo-box {
+    flex-direction: column;
+  }
+
+  .promo-box img {
+    width: auto;
+    height: 220px;
+  }
+
+  .promo-copy {
+    width: auto;
+  }
+
+  .promo-line {
+    width: auto;
+    height: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 
   .banner img {
@@ -431,12 +607,16 @@ nav {
   .banner-line2 {
     font-size: 22px;
   }
+
+  .card-row .card {
+    width: calc((100% - 16px) / 2);
+  }
 }
 
 /* Phone: screen 600px or smaller → 1 column */
 @media (max-width: 600px) {
-  .card-grid {
-    grid-template-columns: 1fr;
+  .promo-copy h2 {
+    font-size: 24px;
   }
 
   .search-section h1 {
@@ -472,8 +652,17 @@ nav {
     margin-bottom: 12px;
   }
 
-  .footer {
+  .footer-links {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .card-row .card {
+    width: 100%;
   }
 }
