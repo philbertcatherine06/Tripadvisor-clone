@@ -1,4 +1,4 @@
-/* BASIC PAGE STYLES v9 */
+/* BASIC PAGE STYLES v11 */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -471,6 +471,7 @@ nav {
   flex: 1;
   min-width: 220px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
 }
 
 .idea-card h3 {
